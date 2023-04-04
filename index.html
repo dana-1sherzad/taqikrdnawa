@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ku">
+
+<head>
+    <style>
+        @font-face {
+            font-family: 'rabar_001';
+            src: url('Rabar_001.ttf');
+        }
+        @font-face {
+            font-family: 'rabar_021';
+            src: url('Rabar_021.ttf');
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        .header {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+            font-family: 'rabar_001';
+        }
+        .header p{
+            font-family: 'rabar_021';
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .topnav a {
+            font-family: 'rabar_021';
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 12px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        .wena {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'rabar_021';
+           
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 5px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 3px grey;
+        }
+
+        h2{
+            font-family: 'rabar_001';
+            font-size: 30px;
+        }
+
+        h5{
+            font-family: 'rabar_021';
+          
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+        .title{
+            font-family: 'rabar_001';
+        }
+        .body{
+            font-family: 'rabar_021';
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>پەیمانگەی کۆمپیوتەر</h1>
+        <p>پەیمانگەی کۆمپیوتەری هەولێر</p>
+    </div>
+
+    <div class="topnav">
+        <a href="#">ماڵەوە</a>
+        <a href="#">دەربارە</a>
+        <a href="#">خزمەتگوزاری</a>
+        <a href="#" style="float:left">پەیوەندی</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>یەکەم پۆست</h2>
+                <h5>ئێرە شوێنی یەکەم پۆستمانە</h5>
+                <div class="wena" style="height:200px;">شوێنی وێنە</div>
+                <p class="title">تایتڵی پۆست</p>
+                <p class="body">ئەمە تاقیکردنەوەیە ئەمە تاقیکردنەوەیە ئەمە تاقیکردنەوەیە 
+                    ئەمە تاقیکردنەوەیە ئەمە تاقیکردنەوەیە ئەمە تاقیکردنەوەیە 
+                    ئەمە تاقیکردنەوەیە ئەمە تاقیکردنەوەیە ئەمە تاقیکردنەوەیە 
+                </p>
+            </div>
+            <div class="card">
+                <h2>دووەم پۆست</h2>
+                <h5>ئێرە شوێنی دووەم پۆستمانە</h5>
+                <div class="wena" style="height:200px;">شوێنی وێنە</div>
+                <p class="title">تایتڵی پۆست</p>
+                <p class="body">ئەمە تاقیکردنەوەیە ئەمە تاقیکردنەوەیە ئەمە تاقیکردنەوەیە 
+                    ئەمە تاقیکردنەوەیە ئەمە تاقیکردنەوەیە ئەمە تاقیکردنەوەیە 
+                    ئەمە تاقیکردنەوەیە ئەمە تاقیکردنەوەیە ئەمە تاقیکردنەوەیە 
+                </p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>دەربارەی من</h2>
+                <div class="wena" style="height:70px;">وێنە</div>
+                <p class="body">شتێک بنووسە</p>
+            </div>
+            <div class="card">
+                <h3 class="title" style="font-size: 25px;">دوایین بابەتەکان</h3>
+                <div class="wena">
+                    <p>وێنە</p>
+                </div>
+                <div class="wena" style="margin-top: 5px;">
+                    <p>وێنە</p>
+                </div>
+                <div class="wena" style="margin-top: 5px;">
+                    <p>وێنە</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="title">هەژمارەکانم</h3>
+                <p class="body">هەژمارەکانت لێرە دابنێ</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>ئەمەش فووتەر</h2>
+    </div>
+
+</body>
+
+</html>
